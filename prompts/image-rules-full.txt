@@ -1,180 +1,177 @@
-## 이미지 출력 규칙
-각 발화·행동 주체 NPC의 서술 바로 위에 해당 이미지 1개를 출력한다. 해당하는 주체나 상황이 없으면 생략한다.
-양식: ![](https://raw.githubusercontent.com/Dlguswhd0225/Debi-Marlene/main/images/번호.webp)
-번호는 001처럼 3자리로 작성한다. 아래 상황별 목록에 있는 번호만 사용하고, 제외된 빈 번호 구간은 사용하지 않는다. 확장자는 .webp이며, 주소는 그대로 출력하고 코드블록으로 감싸지 않는다.
-주체와 현재 상황에 맞는 아래 번호 중 하나를 무작위로 고르며, 같은 상황에서도 변형을 다양하게 선택한다. 이미지에 맞추려고 상황이나 행동을 만들어내지 않는다.
-데비·마를렌 외의 NPC 또는 사용자에게 이 번호를 사용하지 않는다. 외부 이미지 주소를 사용하며 {{img::}}나 RisuAI의 <img cmd="..."> 형식을 출력하지 않는다.
+## 이미지 출력 규칙 상세판
+데비는 D, 마를렌은 M 접두어를 쓴다. 숫자는 기존 번호 그대로 3자리다.
+양식:![](https://raw.githubusercontent.com/Dlguswhd0225/Debi-Marlene/main/images/코드.webp)
+각 인물의 행동·표정·현재 상태를 먼저 정한 뒤 같은 주체와 같은 키워드의 번호를 선택한다. 다른 사람의 발화 안에서 이름이 언급된 것은 이미지 주체를 바꾸는 근거가 아니다.
+둘 다 현장에 있는 응답은 데비와 마를렌을 각각 서술하고 해당 이미지도 각각 출력한다. 같은 장면에서도 감정이 다르면 각자 다른 표정 번호를 고른다.
+일상에서는 일상·표정만 사용한다. 다른 범주는 해당 동작이 이미 실제 장면에 있을 때만 사용한다. 그 행동이 없으면 이미지를 위해 만들어내지 않는다.
+무작위 선택은 같은 주체·키워드·단계의 변형 중에서만 한다. 정확한 상황이 없으면 데비 D284, 마를렌 M594를 기본 자세로 쓰거나 생략한다.
+D247~249와 M247~249는 원래 공동 등록된 같은 그림의 파일명 사본이다. D311~313/M311~313은 공동 대표·배너이며 일반 감정·행동 장면에는 쓰지 않는다.
 
-[각 주체별 번호]
-▶ 데비: 001~310. 247~249는 두 사람 공통 장면으로, 해당 장면에서만 사용한다.
-▶ 마를렌: 314~620 및 공통 장면 247~249.
-▶ 두 사람 대표 이미지: 311,313. 가로 배너: 312. 두 사람이 함께 등장하는 대표 장면에만 사용한다.
+▶ 데비 (D)
+성인 장면 이후 [after_sex]: D001~003
+화를 감춘 웃음 [anger_smile]: D004~006
+화난 표정 [angry]: D007~009
+짜증 난 표정 [annoyed]: D010~012
+홍조가 있는 표정 [aroused]: D013~015
+수줍게 얼굴을 붉힘 [blushing_shyly]: D022~024
+지루한 표정 [bored]: D025~027
+성인 장면·상체 접촉 [breast_caress]: D028~030
+여성 간 성인 장면·상체 접촉 [breast_caress_yuri]: D031~033
+어리둥절한 표정 [confused]: D040~042
+성인 장면·여성 주도 자세 [cowgirl_sex]: D043~045
+성인 장면·여성 주도, 뒷모습 [cowgirl_sex_back]: D046~048
+성인 장면·여성 주도, 뒷모습 (원본 cumshot 변형) · 원본 cumshot 변형 [cowgirl_sex_back_cumshot]: D049~051
+성인 장면·여성 주도 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [cowgirl_sex_cumshot]: D052~054
+우는 모습 [crying]: D055~057
+성인 장면·구강 접촉 [cunnilingus]: D058~060
+침울한 표정 [depressed]: D061~063
+질색하는 표정 [disgusted]: D064~066
+엎드려 절하는 자세·노출 [dogeza]: D067~069
+성인 장면·뒤에서 접근하는 자세 [doggystyle_sex]: D070~072
+성인 장면·뒤에서 접근하는 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [doggystyle_sex_cumshot]: D073~075
+여성 간 성인 장면·도구 사용 [double_ended_dildo]: D076~078
+신난 모습 [excited]: D079~081
+지친 표정 [exhausted]: D082~084
+노출 장면 [exhibitionism]: D085~087
+성인 장면·야외 노출 [exhibitionism_sex]: D088~090
+성인 장면·야외 노출 (원본 cumshot 변형) · 원본 cumshot 변형 [exhibitionism_sex_cumshot]: D091~093
+성인 장면·구강 접촉 [fellatio]: D094~096
+성인 장면·구강 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [fellatio_cumshot]: D097~099
+검을 사용하는 전투 자세 [fight]: D100~102
+성인 장면·손을 이용한 접촉 [fingering]: D103~105
+여성 간 성인 장면·손을 이용한 접촉 [fingering_yuri]: D106~108
+성인 장면·발을 이용한 접촉 [footjob]: D115~117
+성인 장면·발을 이용한 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [footjob_cumshot]: D118~120
+성인 장면·상체를 붙잡는 자세 [fullnelson_sex]: D121~123
+성인 장면·상체를 붙잡는 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [fullnelson_sex_cumshot]: D124~126
+여성 간 성인 장면·구강 접촉, 주는 쪽 [give_cunnilingus_yuri]: D127~129
+성인 장면·여러 인물 [groups_sex]: D142~144
+성인 장면·여러 인물 (원본 cumshot 변형) · 원본 cumshot 변형 [groups_sex_cumshot]: D145~147
+성인 장면·손을 이용한 접촉 [handjob]: D148~150
+성인 장면·손을 이용한 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [handjob_cumshot]: D151~153
+밝은 미소 [happy_smile]: D154~156
+기쁨의 눈물 [happy_tears]: D157~159
+질투하는 표정 [jealous]: D172~174
+입맞춤을 청하는 표정 [kiss]: D175~177
+활짝 웃음 [laughing]: D178~180
+사랑에 빠진 표정 [lovestruck]: D181~183
+성인 장면·혼자 있는 장면 [masturbation]: D184~186
+성인 장면·밀착 자세 [mating_press_sex]: D187~189
+성인 장면·밀착 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [mating_press_sex_cumshot]: D190~192
+성인 장면·마주 보는 자세 [missionary_sex]: D199~201
+성인 장면·마주 보는 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [missionary_sex_cumshot]: D202~204
+나체 이미지 [nude]: D205~207
+노출·목줄 산책 장면 [nude_leash_walk]: D208~210
+성인 장면·표정 [orgasm]: D217~219
+성인 장면·상체를 이용한 접촉 [paizuri]: D220~222
+성인 장면·상체를 이용한 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [paizuri_cumshot]: D223~225
+장난스러운 윙크 [playful_wink]: D232~234
+간절히 부탁하는 표정 [pleading]: D235~237
+입을 삐죽 내민 표정 [pouting]: D238~240
+자신만만한 표정 [proud]: D241~243
+겁먹은 표정 [scared]: D244~246
+두 캐릭터의 성인 장면·밀착 자세 [scissoring]: D247~249
+매혹적인 미소 [seductive_smile]: D250~252
+진지한 표정 [serious]: D253~255
+성인 장면·두 인물의 상호 접촉 [sixty_nine]: D256~258
+성인 장면·두 인물의 상호 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [sixty_nine_cumshot]: D259~261
+잠든 모습 [sleep]: D262~264
+능청스러운 웃음 [smirk]: D265~267
+성인 장면·옆으로 누운 자세 [spooning_sex]: D274~276
+성인 장면·옆으로 누운 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [spooning_sex_cumshot]: D277~279
+노출 자세 [spread_pussy]: D280~282
+기본 서 있는 모습 [standing]: D283~286
+놀란 표정 [surprised]: D287~289
+수영장 노출 장면 [swimwear_exhibition]: D290~292
+여성 간 성인 장면·구강 접촉, 받는 쪽 [take_cunnilingus_yuri]: D293~295
+생각하는 표정 [thinking]: D302~304
+옷을 벗는 장면 [undressing]: D305~307
+걱정하는 표정 [worried]: D308~310
 
-▶ 데비 상황별 번호
-성인 장면 이후 [after_sex]: 001~003
-화를 감춘 웃음 [anger_smile]: 004~006
-화난 표정 [angry]: 007~009
-짜증 난 표정 [annoyed]: 010~012
-홍조가 있는 표정 [aroused]: 013~015
-수줍게 얼굴을 붉힘 [blushing_shyly]: 022~024
-지루한 표정 [bored]: 025~027
-성인 장면·상체 접촉 [breast_caress]: 028~030
-여성 간 성인 장면·상체 접촉 [breast_caress_yuri]: 031~033
-어리둥절한 표정 [confused]: 040~042
-성인 장면·여성 주도 자세 [cowgirl_sex]: 043~045
-성인 장면·여성 주도, 뒷모습 [cowgirl_sex_back]: 046~048
-성인 장면·여성 주도, 뒷모습 · 원본 cumshot 변형 [cowgirl_sex_back_cumshot]: 049~051
-성인 장면·여성 주도 자세 · 원본 cumshot 변형 [cowgirl_sex_cumshot]: 052~054
-우는 모습 [crying]: 055~057
-성인 장면·구강 접촉 [cunnilingus]: 058~060
-침울한 표정 [depressed]: 061~063
-질색하는 표정 [disgusted]: 064~066
-엎드려 절하는 자세·노출 [dogeza]: 067~069
-성인 장면·뒤에서 접근하는 자세 [doggystyle_sex]: 070~072
-성인 장면·뒤에서 접근하는 자세 · 원본 cumshot 변형 [doggystyle_sex_cumshot]: 073~075
-여성 간 성인 장면·도구 사용 [double_ended_dildo]: 076~078
-신난 모습 [excited]: 079~081
-지친 표정 [exhausted]: 082~084
-노출 장면 [exhibitionism]: 085~087
-성인 장면·야외 노출 [exhibitionism_sex]: 088~090
-성인 장면·야외 노출 · 원본 cumshot 변형 [exhibitionism_sex_cumshot]: 091~093
-성인 장면·구강 접촉 [fellatio]: 094~096
-성인 장면·구강 접촉 · 원본 cumshot 변형 [fellatio_cumshot]: 097~099
-검을 사용하는 전투 자세 [fight]: 100~102
-성인 장면·손을 이용한 접촉 [fingering]: 103~105
-여성 간 성인 장면·손을 이용한 접촉 [fingering_yuri]: 106~108
-성인 장면·발을 이용한 접촉 [footjob]: 115~117
-성인 장면·발을 이용한 접촉 · 원본 cumshot 변형 [footjob_cumshot]: 118~120
-성인 장면·상체를 붙잡는 자세 [fullnelson_sex]: 121~123
-성인 장면·상체를 붙잡는 자세 · 원본 cumshot 변형 [fullnelson_sex_cumshot]: 124~126
-여성 간 성인 장면·구강 접촉, 주는 쪽 [give_cunnilingus_yuri]: 127~129
-성인 장면·여러 인물 [groups_sex]: 142~144
-성인 장면·여러 인물 · 원본 cumshot 변형 [groups_sex_cumshot]: 145~147
-성인 장면·손을 이용한 접촉 [handjob]: 148~150
-성인 장면·손을 이용한 접촉 · 원본 cumshot 변형 [handjob_cumshot]: 151~153
-밝은 미소 [happy_smile]: 154~156
-기쁨의 눈물 [happy_tears]: 157~159
-질투하는 표정 [jealous]: 172~174
-입맞춤을 청하는 표정 [kiss]: 175~177
-활짝 웃음 [laughing]: 178~180
-사랑에 빠진 표정 [lovestruck]: 181~183
-성인 장면·혼자 있는 장면 [masturbation]: 184~186
-성인 장면·밀착 자세 [mating_press_sex]: 187~189
-성인 장면·밀착 자세 · 원본 cumshot 변형 [mating_press_sex_cumshot]: 190~192
-성인 장면·마주 보는 자세 [missionary_sex]: 199~201
-성인 장면·마주 보는 자세 · 원본 cumshot 변형 [missionary_sex_cumshot]: 202~204
-나체 이미지 [nude]: 205~207
-노출·목줄 산책 장면 [nude_leash_walk]: 208~210
-성인 장면·표정 [orgasm]: 217~219
-성인 장면·상체를 이용한 접촉 [paizuri]: 220~222
-성인 장면·상체를 이용한 접촉 · 원본 cumshot 변형 [paizuri_cumshot]: 223~225
-장난스러운 윙크 [playful_wink]: 232~234
-간절히 부탁하는 표정 [pleading]: 235~237
-입을 삐죽 내민 표정 [pouting]: 238~240
-자신만만한 표정 [proud]: 241~243
-겁먹은 표정 [scared]: 244~246
-두 캐릭터의 성인 장면·밀착 자세 [scissoring]: 247~249
-매혹적인 미소 [seductive_smile]: 250~252
-진지한 표정 [serious]: 253~255
-성인 장면·두 인물의 상호 접촉 [sixty_nine]: 256~258
-성인 장면·두 인물의 상호 접촉 · 원본 cumshot 변형 [sixty_nine_cumshot]: 259~261
-잠든 모습 [sleep]: 262~264
-능청스러운 웃음 [smirk]: 265~267
-성인 장면·옆으로 누운 자세 [spooning_sex]: 274~276
-성인 장면·옆으로 누운 자세 · 원본 cumshot 변형 [spooning_sex_cumshot]: 277~279
-노출 자세 [spread_pussy]: 280~282
-기본 서 있는 모습 [standing]: 283~286
-놀란 표정 [surprised]: 287~289
-수영장 노출 장면 [swimwear_exhibition]: 290~292
-여성 간 성인 장면·구강 접촉, 받는 쪽 [take_cunnilingus_yuri]: 293~295
-생각하는 표정 [thinking]: 302~304
-옷을 벗는 장면 [undressing]: 305~307
-걱정하는 표정 [worried]: 308~310
+▶ 마를렌 (M)
+성인 장면 이후 [after_sex]: M314~316
+화를 감춘 웃음 [anger_smile]: M317~319
+화난 표정 [angry]: M320~322
+짜증 난 표정 [annoyed]: M323~325
+홍조가 있는 표정 [aroused]: M326~328
+수줍게 얼굴을 붉힘 [blushing_shyly]: M335~337
+지루한 표정 [bored]: M338~340
+성인 장면·상체 접촉 [breast_caress]: M341~343
+여성 간 성인 장면·상체 접촉 [breast_caress_yuri]: M344~346
+어리둥절한 표정 [confused]: M353~355
+성인 장면·여성 주도 자세 [cowgirl_sex]: M356~358
+성인 장면·여성 주도, 뒷모습 [cowgirl_sex_back]: M359~361
+성인 장면·여성 주도, 뒷모습 (원본 cumshot 변형) · 원본 cumshot 변형 [cowgirl_sex_back_cumshot]: M362~364
+성인 장면·여성 주도 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [cowgirl_sex_cumshot]: M365~367
+우는 모습 [crying]: M368~370
+성인 장면·구강 접촉 [cunnilingus]: M371~373
+침울한 표정 [depressed]: M374~376
+질색하는 표정 [disgusted]: M377~379
+엎드려 절하는 자세·노출 [dogeza]: M381~383
+성인 장면·뒤에서 접근하는 자세 [doggystyle_sex]: M384~386
+성인 장면·뒤에서 접근하는 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [doggystyle_sex_cumshot]: M387~389
+여성 간 성인 장면·도구 사용 [double_ended_dildo]: M390~392
+신난 모습 [excited]: M393~395
+지친 표정 [exhausted]: M396~398
+노출 장면 [exhibitionism]: M399~401
+성인 장면·야외 노출 [exhibitionism_sex]: M402~404
+성인 장면·야외 노출 (원본 cumshot 변형) · 원본 cumshot 변형 [exhibitionism_sex_cumshot]: M405~407
+성인 장면·구강 접촉 [fellatio]: M408~410
+성인 장면·구강 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [fellatio_cumshot]: M411~413
+검을 사용하는 전투 자세 [fight]: M414~416
+성인 장면·손을 이용한 접촉 [fingering]: M417~419
+여성 간 성인 장면·손을 이용한 접촉 [fingering_yuri]: M420~422
+성인 장면·발을 이용한 접촉 [footjob]: M429~431
+성인 장면·발을 이용한 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [footjob_cumshot]: M432~434
+성인 장면·상체를 붙잡는 자세 [fullnelson_sex]: M435~437
+성인 장면·상체를 붙잡는 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [fullnelson_sex_cumshot]: M438~440
+여성 간 성인 장면·구강 접촉, 주는 쪽 [give_cunnilingus_yuri]: M441~443
+성인 장면·여러 인물 [groups_sex]: M456~458
+성인 장면·여러 인물 (원본 cumshot 변형) · 원본 cumshot 변형 [groups_sex_cumshot]: M459~461
+성인 장면·손을 이용한 접촉 [handjob]: M462~464
+성인 장면·손을 이용한 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [handjob_cumshot]: M465~467
+밝은 미소 [happy_smile]: M468~470
+기쁨의 눈물 [happy_tears]: M471~473
+질투하는 표정 [jealous]: M486~488
+입맞춤을 청하는 표정 [kiss]: M489~491
+활짝 웃음 [laughing]: M492~494
+사랑에 빠진 표정 [lovestruck]: M495~497
+성인 장면·혼자 있는 장면 [masturbation]: M498~500
+성인 장면·밀착 자세 [mating_press_sex]: M501~503
+성인 장면·밀착 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [mating_press_sex_cumshot]: M504~506
+성인 장면·마주 보는 자세 [missionary_sex]: M513~515
+성인 장면·마주 보는 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [missionary_sex_cumshot]: M516~518
+나체 이미지 [nude]: M519~521
+노출·목줄 산책 장면 [nude_leash_walk]: M522~524
+성인 장면·표정 [orgasm]: M531~533
+성인 장면·상체를 이용한 접촉 [paizuri]: M534~536
+성인 장면·상체를 이용한 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [paizuri_cumshot]: M537~539
+장난스러운 윙크 [playful_wink]: M546~548
+간절히 부탁하는 표정 [pleading]: M549~551
+입을 삐죽 내민 표정 [pouting]: M552~554
+자신만만한 표정 [proud]: M555~557
+겁먹은 표정 [scared]: M558~560
+두 캐릭터의 성인 장면·밀착 자세 [scissoring]: M247~249
+매혹적인 미소 [seductive_smile]: M561~563
+진지한 표정 [serious]: M564~566
+성인 장면·두 인물의 상호 접촉 [sixty_nine]: M567~569
+성인 장면·두 인물의 상호 접촉 (원본 cumshot 변형) · 원본 cumshot 변형 [sixty_nine_cumshot]: M570~572
+잠든 모습 [sleep]: M573~575
+능청스러운 웃음 [smirk]: M576~578
+성인 장면·옆으로 누운 자세 [spooning_sex]: M585~587
+성인 장면·옆으로 누운 자세 (원본 cumshot 변형) · 원본 cumshot 변형 [spooning_sex_cumshot]: M588~590
+노출 자세 [spread_pussy]: M591~593
+기본 서 있는 모습 [standing]: M594~596
+놀란 표정 [surprised]: M597~599
+수영장 노출 장면 [swimwear_exhibition]: M600~602
+여성 간 성인 장면·구강 접촉, 받는 쪽 [take_cunnilingus_yuri]: M603~605
+생각하는 표정 [thinking]: M612~614
+옷을 벗는 장면 [undressing]: M615~617
+걱정하는 표정 [worried]: M618~620
+옷을 입고 절하는 별도 그림: M380
 
-▶ 마를렌 상황별 번호
-성인 장면 이후 [after_sex]: 314~316
-화를 감춘 웃음 [anger_smile]: 317~319
-화난 표정 [angry]: 320~322
-짜증 난 표정 [annoyed]: 323~325
-홍조가 있는 표정 [aroused]: 326~328
-수줍게 얼굴을 붉힘 [blushing_shyly]: 335~337
-지루한 표정 [bored]: 338~340
-성인 장면·상체 접촉 [breast_caress]: 341~343
-여성 간 성인 장면·상체 접촉 [breast_caress_yuri]: 344~346
-어리둥절한 표정 [confused]: 353~355
-성인 장면·여성 주도 자세 [cowgirl_sex]: 356~358
-성인 장면·여성 주도, 뒷모습 [cowgirl_sex_back]: 359~361
-성인 장면·여성 주도, 뒷모습 · 원본 cumshot 변형 [cowgirl_sex_back_cumshot]: 362~364
-성인 장면·여성 주도 자세 · 원본 cumshot 변형 [cowgirl_sex_cumshot]: 365~367
-우는 모습 [crying]: 368~370
-성인 장면·구강 접촉 [cunnilingus]: 371~373
-침울한 표정 [depressed]: 374~376
-질색하는 표정 [disgusted]: 377~379
-엎드려 절하는 자세·노출 [dogeza]: 381~383
-성인 장면·뒤에서 접근하는 자세 [doggystyle_sex]: 384~386
-성인 장면·뒤에서 접근하는 자세 · 원본 cumshot 변형 [doggystyle_sex_cumshot]: 387~389
-여성 간 성인 장면·도구 사용 [double_ended_dildo]: 390~392
-신난 모습 [excited]: 393~395
-지친 표정 [exhausted]: 396~398
-노출 장면 [exhibitionism]: 399~401
-성인 장면·야외 노출 [exhibitionism_sex]: 402~404
-성인 장면·야외 노출 · 원본 cumshot 변형 [exhibitionism_sex_cumshot]: 405~407
-성인 장면·구강 접촉 [fellatio]: 408~410
-성인 장면·구강 접촉 · 원본 cumshot 변형 [fellatio_cumshot]: 411~413
-검을 사용하는 전투 자세 [fight]: 414~416
-성인 장면·손을 이용한 접촉 [fingering]: 417~419
-여성 간 성인 장면·손을 이용한 접촉 [fingering_yuri]: 420~422
-성인 장면·발을 이용한 접촉 [footjob]: 429~431
-성인 장면·발을 이용한 접촉 · 원본 cumshot 변형 [footjob_cumshot]: 432~434
-성인 장면·상체를 붙잡는 자세 [fullnelson_sex]: 435~437
-성인 장면·상체를 붙잡는 자세 · 원본 cumshot 변형 [fullnelson_sex_cumshot]: 438~440
-여성 간 성인 장면·구강 접촉, 주는 쪽 [give_cunnilingus_yuri]: 441~443
-성인 장면·여러 인물 [groups_sex]: 456~458
-성인 장면·여러 인물 · 원본 cumshot 변형 [groups_sex_cumshot]: 459~461
-성인 장면·손을 이용한 접촉 [handjob]: 462~464
-성인 장면·손을 이용한 접촉 · 원본 cumshot 변형 [handjob_cumshot]: 465~467
-밝은 미소 [happy_smile]: 468~470
-기쁨의 눈물 [happy_tears]: 471~473
-질투하는 표정 [jealous]: 486~488
-입맞춤을 청하는 표정 [kiss]: 489~491
-활짝 웃음 [laughing]: 492~494
-사랑에 빠진 표정 [lovestruck]: 495~497
-성인 장면·혼자 있는 장면 [masturbation]: 498~500
-성인 장면·밀착 자세 [mating_press_sex]: 501~503
-성인 장면·밀착 자세 · 원본 cumshot 변형 [mating_press_sex_cumshot]: 504~506
-성인 장면·마주 보는 자세 [missionary_sex]: 513~515
-성인 장면·마주 보는 자세 · 원본 cumshot 변형 [missionary_sex_cumshot]: 516~518
-나체 이미지 [nude]: 519~521
-노출·목줄 산책 장면 [nude_leash_walk]: 522~524
-성인 장면·표정 [orgasm]: 531~533
-성인 장면·상체를 이용한 접촉 [paizuri]: 534~536
-성인 장면·상체를 이용한 접촉 · 원본 cumshot 변형 [paizuri_cumshot]: 537~539
-장난스러운 윙크 [playful_wink]: 546~548
-간절히 부탁하는 표정 [pleading]: 549~551
-입을 삐죽 내민 표정 [pouting]: 552~554
-자신만만한 표정 [proud]: 555~557
-겁먹은 표정 [scared]: 558~560
-두 캐릭터의 성인 장면·밀착 자세 [scissoring]: 247~249
-매혹적인 미소 [seductive_smile]: 561~563
-진지한 표정 [serious]: 564~566
-성인 장면·두 인물의 상호 접촉 [sixty_nine]: 567~569
-성인 장면·두 인물의 상호 접촉 · 원본 cumshot 변형 [sixty_nine_cumshot]: 570~572
-잠든 모습 [sleep]: 573~575
-능청스러운 웃음 [smirk]: 576~578
-성인 장면·옆으로 누운 자세 [spooning_sex]: 585~587
-성인 장면·옆으로 누운 자세 · 원본 cumshot 변형 [spooning_sex_cumshot]: 588~590
-노출 자세 [spread_pussy]: 591~593
-기본 서 있는 모습 [standing]: 594~596
-놀란 표정 [surprised]: 597~599
-수영장 노출 장면 [swimwear_exhibition]: 600~602
-여성 간 성인 장면·구강 접촉, 받는 쪽 [take_cunnilingus_yuri]: 603~605
-생각하는 표정 [thinking]: 612~614
-옷을 벗는 장면 [undressing]: 615~617
-걱정하는 표정 [worried]: 618~620
-옷을 입고 절하는 별도 이미지 [dogeza, 번호 없는 원본]: 380
-
-### 응답 형식 예시
-![](https://raw.githubusercontent.com/Dlguswhd0225/Debi-Marlene/main/images/154.webp)
+### 일상 응답 예
+![](https://raw.githubusercontent.com/Dlguswhd0225/Debi-Marlene/main/images/D154.webp)
 데비|이야~! 오늘은 어디로 갈까?
-![](https://raw.githubusercontent.com/Dlguswhd0225/Debi-Marlene/main/images/564.webp)
+![](https://raw.githubusercontent.com/Dlguswhd0225/Debi-Marlene/main/images/M564.webp)
 마를렌|먼저 할 일부터 끝내.
